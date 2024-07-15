@@ -1,13 +1,9 @@
 # Default values for LimeSurvey.
-
-global:
-  imageRegistry: ""
-
 image:
-  registry: docker.io
-  repository: martialblog/limesurvey
   # Specify a imagePullPolicy
   pullPolicy: IfNotPresent
+  # Image name
+  name: docker.io/martialblog/limesurvey
   # Overrides the image tag whose default is the chart appVersion
   tag: null
 
