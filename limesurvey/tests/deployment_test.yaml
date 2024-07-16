@@ -125,7 +125,7 @@ tests:
     set:
       ### Helm values:
       image:
-        registry: ghcr.io
+        name: ghcr.io/martialblog/limesurvey
         tag: debian-ramesses-the-third
       persistence:
         enabled: true
