@@ -90,3 +90,11 @@ Return the LimeSurvey Secret Name
     {{- printf "%s-app-secrets" (include "limesurvey.fullname" .) -}}
 {{- end -}}
 {{- end -}}
+
+
+{{/*
+Return the full URL of the LimeSurvey image (including registry, image and tag)
+*/}}
+{{- define "limesurvey.imageUrl" }}
+    {{- printf "%s:%s" .Values.image.name (default .Chart.AppVersion .Values.image.tag) -}}
+{{- end }}
